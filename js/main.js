@@ -23,10 +23,18 @@ $(document).ready(function () {
 	$(".testimonials .slick").slick({
 		slidesToShow: 1,
 		dots: false,
-		// autoplay: true,
+		autoplay: true,
 		infinite: true,
 		autoplaySpeed: 5000,
 		speed: 1000,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false,
+				},
+			},
+		],
 	});
 
 	$("a[href*=\\#]:not([href=\\#])")
